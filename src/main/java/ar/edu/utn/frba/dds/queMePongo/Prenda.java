@@ -1,17 +1,36 @@
 package ar.edu.utn.frba.dds.queMePongo;
 
+import java.text.Normalizer;
+
 public class Prenda {
   private TipoPrenda tipoPrenda;
   private Material material;
   private Color colorPrimario;
   private Color colorSecundario;
   private Trama trama;
+  private Formalidad formalidad;
 
   public Prenda(TipoPrenda tipoPrenda, Material material, Color colorPrimario, Trama trama) {
     this.tipoPrenda = tipoPrenda;
     this.material = material;
     this.colorPrimario = colorPrimario;
     this.trama = trama;
+  }
+
+  public void indicarFormalidad(Formalidad formalidad) {
+    setFormalidad(formalidad);
+  }
+
+  private void setFormalidad(Formalidad formalidad) {
+    this.formalidad = formalidad;
+  }
+
+  public Formalidad obtenerFormalidad() {
+    return getFormalidad();
+  }
+
+  public Formalidad getFormalidad() {
+    return formalidad;
   }
 
   private TipoPrenda getTipoPrenda() {
