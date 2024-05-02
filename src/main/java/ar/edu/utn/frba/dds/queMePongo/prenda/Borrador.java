@@ -1,4 +1,4 @@
-package ar.edu.utn.frba.dds.queMePongo;
+package ar.edu.utn.frba.dds.queMePongo.prenda;
 
 import ar.edu.utn.frba.dds.queMePongo.exceptions.ColorInvalidoException;
 import ar.edu.utn.frba.dds.queMePongo.exceptions.TipoPrendaInvalidoException;

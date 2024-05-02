@@ -1,5 +1,9 @@
 package ar.edu.utn.frba.dds.queMePongo;
 
+import ar.edu.utn.frba.dds.queMePongo.prenda.Prenda;
+import ar.edu.utn.frba.dds.queMePongo.prenda.Categoria;
+import ar.edu.utn.frba.dds.queMePongo.sugerencias.MotorDeSugerencias;
+import ar.edu.utn.frba.dds.queMePongo.sugerencias.Sugerencia;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +30,7 @@ public class Usuario {
   }
 
   public List<Sugerencia> generarSugerencias() {
-    motorDeSugerencias.generarSugerencias(this);
+    return motorDeSugerencias.generarSugerencias(this);
   }
 
   public List<Prenda> obtenerPrendasSuperiores() {

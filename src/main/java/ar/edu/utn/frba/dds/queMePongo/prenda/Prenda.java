@@ -1,6 +1,4 @@
-package ar.edu.utn.frba.dds.queMePongo;
-
-import java.text.Normalizer;
+package ar.edu.utn.frba.dds.queMePongo.prenda;
 
 public class Prenda {
   private TipoPrenda tipoPrenda;

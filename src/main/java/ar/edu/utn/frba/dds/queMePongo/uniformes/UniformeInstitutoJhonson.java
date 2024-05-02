@@ -1,4 +1,13 @@
-package ar.edu.utn.frba.dds.queMePongo;
+package ar.edu.utn.frba.dds.queMePongo.uniformes;
+
+import ar.edu.utn.frba.dds.queMePongo.prenda.Color;
+import ar.edu.utn.frba.dds.queMePongo.prenda.Prenda;
+import ar.edu.utn.frba.dds.queMePongo.prenda.TipoPrenda;
+import ar.edu.utn.frba.dds.queMePongo.prenda.Trama;
+import ar.edu.utn.frba.dds.queMePongo.prenda.Borrador;
+import ar.edu.utn.frba.dds.queMePongo.prenda.Material;
+
+
 
 public class UniformeInstitutoJhonson implements UniformeFactory {
   public Prenda fabricarParteSuperior() {

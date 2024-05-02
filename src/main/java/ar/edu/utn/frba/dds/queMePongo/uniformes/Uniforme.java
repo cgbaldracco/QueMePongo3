@@ -1,4 +1,6 @@
-package ar.edu.utn.frba.dds.queMePongo;
+package ar.edu.utn.frba.dds.queMePongo.uniformes;
+
+import ar.edu.utn.frba.dds.queMePongo.prenda.Prenda;
 
 public class Uniforme {
   private Prenda prendaSuperior;

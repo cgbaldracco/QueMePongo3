@@ -1,4 +1,6 @@
-package ar.edu.utn.frba.dds.queMePongo;
+package ar.edu.utn.frba.dds.queMePongo.sugerencias;
+
+import ar.edu.utn.frba.dds.queMePongo.prenda.Prenda;
 
 public class Sugerencia {
   private Prenda prendaSuperior;

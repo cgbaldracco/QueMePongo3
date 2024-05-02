@@ -1,5 +1,9 @@
-package ar.edu.utn.frba.dds.queMePongo;
+package ar.edu.utn.frba.dds.queMePongo.sugerencias;
 
+import ar.edu.utn.frba.dds.queMePongo.prenda.Formalidad;
+import ar.edu.utn.frba.dds.queMePongo.prenda.Prenda;
+import ar.edu.utn.frba.dds.queMePongo.Usuario;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MotorDeSugerenciasFormal implements MotorDeSugerencias {
@@ -21,7 +25,21 @@ public class MotorDeSugerenciasFormal implements MotorDeSugerencias {
         !(prenda.obtenerFormalidad() == Formalidad.INFORMAL)).toList() : prendas;
   }
 
-  public List<Sugerencia> generarCombinacionesDePrendas(List<Prenda> superiores, List<Prenda> inferiores, List<Prenda> calzado) {
-    //??
+  public List<Sugerencia> generarCombinacionesDePrendas(List<Prenda> superiores, List<Prenda> inferiores, List<Prenda> calzados) {
+    List<Sugerencia> sugerencias = new ArrayList<>();
+    Prenda superior;
+    Prenda inferior;
+    Prenda calzado;
+    for (int i = 0; i < superiores.toArray().length; i++) {
+      superior = superiores.get(i);
+      for (int j = 0; j < inferiores.toArray().length; j++) {
+        inferior = inferiores.get(j);
+        for (int k = 0; k < calzados.toArray().length; k++) {
+          calzado = calzados.get(k);
+          sugerencias.add(new Sugerencia(superior, inferior, calzado));
+        }
+      }
+    }
+    return sugerencias;
   }
 }
